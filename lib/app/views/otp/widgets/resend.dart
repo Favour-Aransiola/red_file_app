@@ -9,6 +9,7 @@ class Resend extends StatelessWidget {
     return Container(
         height: 50.wp(MediaQuery.of(context).size.width),
         width: MediaQuery.of(context).size.width,
+        alignment: Alignment.center,
         margin: EdgeInsets.only(top: 25.wp(MediaQuery.of(context).size.width)),
         child: RichText(
           text: TextSpan(children: [

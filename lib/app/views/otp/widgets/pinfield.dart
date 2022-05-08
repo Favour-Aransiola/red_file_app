@@ -21,10 +21,10 @@ class PinField extends StatelessWidget {
             child: Form(
               key: otpKey,
               child: PinCodeTextField(
-                errorTextSpace: 25,
+                errorTextSpace: 0,
                 autovalidateMode: AutovalidateMode.disabled,
                 errorTextMargin:
-                    EdgeInsets.all(15.wp(MediaQuery.of(context).size.width)),
+                    EdgeInsets.all(10.wp(MediaQuery.of(context).size.width)),
                 appContext: context,
                 length: 4,
                 onChanged: (value) {},
@@ -41,7 +41,7 @@ class PinField extends StatelessWidget {
                   fieldWidth: 55.wp(MediaQuery.of(context).size.width),
                   shape: PinCodeFieldShape.box,
                   inactiveColor: const Color(0xff222831),
-                  errorBorderColor: Colors.red,
+                  errorBorderColor: Colors.white,
                   selectedColor: const Color(0xff222831),
                 ),
               ),

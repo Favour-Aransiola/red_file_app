@@ -17,8 +17,8 @@ class Otp extends StatelessWidget {
           MyCustomAppBar(),
           PinField(),
           SizedBox(height: 75.wp(MediaQuery.of(context).size.width)),
-          VerifyButton(),
-          Resend()
+          const VerifyButton(),
+          const Resend()
         ]),
       ),
     );
